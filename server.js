@@ -10,7 +10,7 @@ server.use(express.json());
 // Use Routers
 server.use("/api/doggos", doggosRouter);
 
-// Server Test. Hello Msg.
+// Server Test
 server.get("/", (req, res) => {
   res.status(200).send({ message: "Hi from Mindy!" });
 });
